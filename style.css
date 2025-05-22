@@ -1,12 +1,10 @@
 body{
     margin: 0;
-    ackground: #9b2a2a;
-    ackground: linear-gradient(90deg, rgba(155, 42, 42, 1) 0%, rgba(199, 121, 87, 1) 29%, rgba(237, 221, 83, 1) 69%);
-    background-image: url(butik2.jpeg);
+    background-image: linear-gradient(rgba 0, 0, 0, 0.5), url(butik2.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,3 +49,5 @@ a:visited{
       .knapp {
         font-size: 6vw;
         padding: 10vw 12vw;
+    }
+}      
