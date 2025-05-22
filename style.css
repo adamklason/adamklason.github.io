@@ -15,25 +15,27 @@ body{
 
 .Knappar{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+
     
 }
 
 .knapp{
-    padding: 120px 220px;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    font-size: 45px;
-    text-decoration: none;
-    box-shadow: 
-    4px 4px 15px 2px rgba(73, 72, 72, 0.8),
-    4px 4px 15px 2px rgba(73, 72, 72, 0.8);
-    
-    
-    
+  padding: 10vw 15vw; /* Responsiv padding */
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 3vw;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 5vw; /* Responsiv textstorlek */
+  text-decoration: none;
+  box-shadow: 1vw 1vw 2vw rgba(73, 72, 72, 0.8);
+  color: white;
+  text-align: center;
+  min-width: 40vw;
+  text-shadow: 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 0.6);   
 }
 
 .knapp:hover{
@@ -44,3 +46,8 @@ body{
 a:visited{
     color: inherit;
 }
+
+@media (max-width: 400px) {
+      .knapp {
+        font-size: 6vw;
+        padding: 10vw 12vw;
